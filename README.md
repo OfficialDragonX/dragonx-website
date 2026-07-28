@@ -29,7 +29,7 @@ https://t.me/dragonxcommunity
 https://t.me/DragonXDRGX
 
 𝕏 X (Twitter):
-https://x.com/dragonxcomdxcw?s=11
+https://x.com/officialdragonx?s=11
 
 💻 GitHub:
 https://github.com/OfficialDragonX
