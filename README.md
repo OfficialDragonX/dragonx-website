@@ -1,6 +1,6 @@
 # dragonx-website
 Official website of DragonX (DRGX).
-# 🐉 DragonX (DRGX)
+# DragonX (DRGX)
 
 Official website of DragonX (DRGX)
 
