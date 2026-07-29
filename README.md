@@ -1,5 +1,3 @@
-# dragonx-website
-Official website of DragonX (DRGX).
 # DragonX (DRGX)
 
 Official website of DragonX (DRGX)
@@ -14,29 +12,35 @@ Powering the Future of AI, Payments & Blockchain.
 
 ## About
 
-DragonX is a community-driven blockchain project built on the Solana blockchain. DragonX is committed to building a trusted ecosystem through transparency, innovation, security, and long-term development. Our long-term vision includes exploring AI-powered blockchain technologies and digital payment solutions.
+DragonX is a community-driven blockchain project built on the Solana blockchain. DragonX is committed to building a trusted ecosystem through transparency, innovation, security, and long-term development.
+
+Our long-term vision includes exploring AI-powered blockchain technologies and digital payment solutions.
 
 ## Official Links
 
-🌐 Website: Under Development
+🌐 Website  
+Coming Soon
 
-📘 Whitepaper: In Progress
+📘 Whitepaper  
+Coming Soon
 
-💬 Telegram Community
+💬 Telegram Community  
 https://t.me/dragonxcommunity
 
-📢 Telegram Channel
+📢 Telegram Channel  
 https://t.me/DragonXDRGX
 
-𝕏 X (Official)
-https://x.com/officialdragonx?s=11
+𝕏 X (Official)  
+https://x.com/officialdragonx
 
-💻 GitHub
+💻 GitHub  
 https://github.com/OfficialDragonX
 
 ## Disclaimer
 
-DragonX is currently under active development. Features described as future plans, including AI tools, payment solutions, and wallet services, are long-term goals and are not currently available. This repository is for informational purposes only and should not be considered financial or investment advice.
+DragonX is currently under active development. Features described as future plans, including AI tools, payment solutions, and wallet services, are long-term goals and are not currently available.
+
+This repository is for informational purposes only and should not be considered financial or investment advice.
 
 ---
 
@@ -54,6 +58,6 @@ DragonX is currently under active development. Features described as future plan
 
 ---
 
-**DragonX (DRGX)**
+# DragonX (DRGX)
 
 **Powering the Future of AI, Payments & Blockchain.**
