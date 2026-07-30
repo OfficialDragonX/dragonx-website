@@ -41,6 +41,7 @@ margin-top:25px;
 
 .button:hover{
 background:#ffcc00;
+color:#000;
 }
 
 section{
@@ -63,30 +64,8 @@ font-weight:bold;
 }
 
 a:hover{
-    color:#ffffff;
-    text-decoration:none;
-}
-
-nav{
-display:flex;
-justify-content:center;
-gap:30px;
-padding:20px;
-background:#111;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-nav a{
-color:#FFD700;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
-}
-
-nav a:hover{
 color:#ffffff;
+text-decoration:none;
 }
 
 nav{
@@ -103,6 +82,14 @@ z-index:1000;
 }
 
 nav a{
+color:#FFD700;
+text-decoration:none;
+font-weight:bold;
 font-size:18px;
 padding:5px 10px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffffff;
 }
