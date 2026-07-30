@@ -1,9 +1,16 @@
+html{
+scroll-behavior:smooth;
+}
+
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#0d0d0d;
+background:linear-gradient(135deg,#0d0d0d,#1a1a1a,#0d0d0d);
+background-size:400% 400%;
+animation:bgMove 12s ease infinite;
 color:#ffffff;
 }
+
 
 header{
 background:linear-gradient(135deg,#111,#1b1b1b);
@@ -92,4 +99,33 @@ transition:0.3s;
 
 nav a:hover{
 color:#ffffff;
+}
+
+@keyframes bgMove{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+
+section{
+max-width:900px;
+margin:40px auto;
+padding:40px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,215,0,0.15);
+transition:0.4s;
+}
+
+section:hover{
+transform:translateY(-5px);
+box-shadow:0 0 35px rgba(255,215,0,0.3);
 }
