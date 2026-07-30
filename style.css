@@ -88,3 +88,21 @@ transition:0.3s;
 nav a:hover{
 color:#ffffff;
 }
+
+nav{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:15px;
+padding:15px;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+font-size:18px;
+padding:5px 10px;
+}
