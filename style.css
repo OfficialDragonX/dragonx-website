@@ -19,9 +19,13 @@ padding:80px 20px;
 }
 
 h1{
-font-size:48px;
+font-size:56px;
 color:#FFD700;
 margin-bottom:10px;
+text-shadow:0 0 10px #FFD700,
+0 0 20px #FFD700,
+0 0 40px rgba(255,215,0,0.6);
+animation:titleGlow 2s ease-in-out infinite alternate;
 }
 
 h2{
@@ -44,11 +48,15 @@ text-decoration:none;
 border-radius:8px;
 font-weight:bold;
 margin-top:25px;
+transition:0.3s;
+box-shadow:0 0 15px rgba(255,215,0,0.4);
 }
 
 .button:hover{
 background:#ffcc00;
 color:#000;
+transform:translateY(-3px) scale(1.05);
+box-shadow:0 0 30px rgba(255,215,0,0.8);
 }
 
 section{
@@ -128,4 +136,15 @@ transition:0.4s;
 section:hover{
 transform:translateY(-5px);
 box-shadow:0 0 35px rgba(255,215,0,0.3);
+}
+
+@keyframes titleGlow{
+from{
+text-shadow:0 0 10px #FFD700;
+}
+to{
+text-shadow:0 0 20px #FFD700,
+0 0 40px #FFD700,
+0 0 60px rgba(255,215,0,0.8);
+}
 }
