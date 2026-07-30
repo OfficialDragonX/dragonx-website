@@ -63,13 +63,7 @@ font-weight:bold;
 }
 
 a:hover{
-color:#ffffff;
+    color:#ffffff;
+    text-decoration:none;
 }
-
-.button{
-color:#000;
-}
-
-.button:hover{
-color:#000;
-}
+Thikxa 
