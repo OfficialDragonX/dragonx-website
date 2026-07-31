@@ -1,432 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DragonX (DRGX) — Building the Future of Blockchain Innovation</title>
-<meta name="description" content="DragonX is a community-driven blockchain ecosystem built on Solana with a long-term vision of decentralized finance, AI integration, digital payments, and real-world blockchain adoption.">
+
+<title>DragonX (DRGX)</title>
+
+<meta name="description" content="DragonX (DRGX) - Community Driven Blockchain Project">
+
+<link rel="icon" href="logo.png" type="image/png">
+
+<link rel="stylesheet" href="style.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<!-- Loading Screen -->
-<div class="loader" id="loader">
-  <div class="loader-emblem">
-    <svg viewBox="0 0 100 100" class="loader-ring">
-      <circle cx="50" cy="50" r="42"></circle>
-    </svg>
-    <span class="loader-mark">DX</span>
-  </div>
-  <p class="loader-text">Igniting the ledger<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+<div id="progress-bar"></div>
+
+<nav class="navbar">
+
+<div class="logo-area">
+<img src="logo.png" class="logo" alt="DragonX">
+<span>DragonX</span>
 </div>
 
-<!-- Scroll progress bar -->
-<div class="scroll-progress" id="scrollProgress"></div>
+<ul>
 
-<!-- Ambient background layers -->
-<div class="bg-layer bg-gradient"></div>
-<div class="bg-layer bg-grid"></div>
-<canvas id="particles" class="bg-layer"></canvas>
-<div class="bg-layer bg-glow bg-glow--purple"></div>
-<div class="bg-layer bg-glow bg-glow--gold"></div>
+<li><a href="#">Home</a></li>
 
-<!-- Header -->
-<header class="site-header" id="siteHeader">
-  <div class="nav-wrap">
-    <a href="#home" class="brand">
-      <span class="brand-mark">
-        <img src="logo.png" alt="DragonX" id="logoImg" onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex';">
-        <span id="logoFallback" class="brand-fallback">DX</span>
-      </span>
-      <span class="brand-name">Dragon<span class="accent-gold">X</span></span>
-    </a>
+<li><a href="#about">About</a></li>
 
-    <nav class="main-nav" id="mainNav">
-      <a href="#home" class="nav-link is-active">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#token" class="nav-link">Token</a>
-      <a href="#tokenomics" class="nav-link">Tokenomics</a>
-      <a href="#roadmap" class="nav-link">Roadmap</a>
-      <a href="#whitepaper" class="nav-link">Whitepaper</a>
-      <a href="#community" class="nav-link">Community</a>
-    </nav>
+<li><a href="#token">Token</a></li>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+<li><a href="#roadmap">Roadmap</a></li>
+
+<li><a href="#whitepaper">Whitepaper</a></li>
+
+<li><a href="#links">Links</a></li>
+
+</ul>
+
+</nav>
+
+<header class="hero">
+
+<div class="particles"></div>
+
+<img src="logo.png" class="hero-logo" alt="DragonX Logo">
+
+<h1>DragonX (DRGX)</h1>
+
+<p class="subtitle">
+Building the Future of Blockchain Innovation
+</p>
+
+<p class="description">
+
+DragonX is a community-driven blockchain project built on Solana with a long-term vision of decentralized innovation, AI integration, digital payments and real-world blockchain adoption.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://t.me/dragonxcommunity" target="_blank" class="btn primary">
+
+Join Community
+
+</a>
+
+<a href="#whitepaper" class="btn secondary">
+
+Whitepaper
+
+</a>
+
+</div>
+
 </header>
 
-<main>
+<section id="token">
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-inner">
-      <div class="hero-glow-ring" aria-hidden="true">
-        <div class="ring ring--1"></div>
-        <div class="ring ring--2"></div>
-        <div class="ring ring--3"></div>
-        <div class="hero-logo">
-          <img src="logo.png" alt="DragonX logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="hero-logo-fallback">
-            <svg viewBox="0 0 200 200" width="100%" height="100%">
-              <defs>
-                <linearGradient id="dxg" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#e7b64c"/>
-                  <stop offset="55%" stop-color="#a855f7"/>
-                  <stop offset="100%" stop-color="#5b21b6"/>
-                </linearGradient>
-              </defs>
-              <circle cx="100" cy="100" r="88" fill="none" stroke="url(#dxg)" stroke-width="2" opacity="0.5"/>
-              <text x="100" y="122" text-anchor="middle" font-family="Sora, sans-serif" font-weight="800" font-size="64" fill="url(#dxg)">DX</text>
-            </svg>
-          </div>
-        </div>
-      </div>
+<h2>Token Overview</h2>
 
-      <p class="eyebrow fade-up">Solana Ecosystem · Est. 2026</p>
-      <h1 class="hero-title fade-up">
-        Dragon<span class="accent-gold">X</span> <span class="ticker">(DRGX)</span>
-      </h1>
-      <p class="hero-subtitle fade-up">Building the Future of Blockchain Innovation</p>
-      <p class="hero-desc fade-up">
-        DragonX is a community-driven blockchain ecosystem built on Solana with a long-term vision of
-        decentralized finance, AI integration, digital payments, and real-world blockchain adoption.
-      </p>
+<div class="cards">
 
-      <div class="hero-cta fade-up">
-        <a href="#community" class="btn btn--gold">
-          <span>Join Community</span>
-        </a>
-        <a href="#whitepaper" class="btn btn--ghost">
-          <span>View Whitepaper</span>
-        </a>
-      </div>
+<div class="card">
 
-      <div class="scroll-cue fade-up" aria-hidden="true">
-        <span class="scroll-cue-line"></span>
-        <span>Scroll</span>
-      </div>
-    </div>
-  </section>
+<h3>Blockchain</h3>
 
-  <!-- LIVE TOKEN STATS -->
-  <section class="stats" id="token">
-    <div class="section-inner">
-      <div class="stats-grid">
-        <div class="stat-card fade-up">
-          <span class="stat-label">Blockchain</span>
-          <span class="stat-value">Solana</span>
-        </div>
-        <div class="stat-card fade-up">
-          <span class="stat-label">Symbol</span>
-          <span class="stat-value">DRGX</span>
-        </div>
-        <div class="stat-card fade-up">
-          <span class="stat-label">Status</span>
-          <span class="stat-value stat-value--live"><span class="pulse-dot"></span>Under Development</span>
-        </div>
-        <div class="stat-card fade-up">
-          <span class="stat-label">Governance</span>
-          <span class="stat-value">Community Driven</span>
-        </div>
-        <div class="stat-card fade-up">
-          <span class="stat-label">Website</span>
-          <span class="stat-value">Version V2</span>
-        </div>
-      </div>
-    </div>
-  </section>
+<p>Solana</p>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="section-inner">
-      <p class="section-eyebrow fade-up">01 — Origin</p>
-      <h2 class="section-title fade-up">What is Dragon<span class="accent-gold">X</span>?</h2>
+</div>
 
-      <div class="about-grid">
-        <div class="glass-card about-card fade-up">
-          <div class="about-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Built for the Long Term</h3>
-          <p>DragonX isn't a trend to trade — it's infrastructure built with patience, transparency, and a roadmap that stretches years, not weeks.</p>
-        </div>
+<div class="card">
 
-        <div class="glass-card about-card fade-up">
-          <div class="about-icon">
-            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Solana Speed</h3>
-          <p>Deployed on Solana for near-instant finality and fees low enough to make everyday on-chain activity practical for everyone.</p>
-        </div>
+<h3>Symbol</h3>
 
-        <div class="glass-card about-card fade-up">
-          <div class="about-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h4l2-7 4 14 2-7h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Community Driven</h3>
-          <p>Every phase of DragonX is shaped in the open — holders, builders, and believers steer the direction of the ecosystem together.</p>
-        </div>
+<p>DRGX</p>
 
-        <div class="glass-card about-card fade-up">
-          <div class="about-icon">
-            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
-          </div>
-          <h3>Beyond a Token</h3>
-          <p>The roadmap points toward AI integration, digital payments, and a wallet — DRGX is the fuel for an entire ecosystem, not just an asset.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
 
-  <!-- TOKENOMICS -->
-  <section class="tokenomics" id="tokenomics">
-    <div class="section-inner">
-      <p class="section-eyebrow fade-up">02 — Distribution</p>
-      <h2 class="section-title fade-up">Tokenomics</h2>
-      <p class="section-lead fade-up">A transparent allocation designed to fund growth while keeping the majority of supply in the hands of the community.</p>
+<div class="card">
 
-      <div class="tokenomics-grid">
-        <div class="token-card fade-up" style="--accent:#f5c451;">
-          <div class="token-card-top">
-            <span class="token-icon">◈</span>
-            <span class="token-pct" data-target="100">0%</span>
-          </div>
-          <h3>Total Supply</h3>
-          <div class="token-bar"><span style="--fill:100%"></span></div>
-          <p>Fixed supply, minted once — no hidden inflation.</p>
-        </div>
+<h3>Status</h3>
 
-        <div class="token-card fade-up" style="--accent:#a855f7;">
-          <div class="token-card-top">
-            <span class="token-icon">◈</span>
-            <span class="token-pct" data-target="100">0%</span>
-          </div>
-          <h3>Circulating Supply</h3>
-          <div class="token-bar"><span style="--fill:100%"></span></div>
-          <p>Fully unlocked at launch for a fair, transparent market.</p>
-        </div>
+<p>Under Development</p>
 
-        <div class="token-card fade-up" style="--accent:#7c3aed;">
-          <div class="token-card-top">
-            <span class="token-icon">◈</span>
-            <span class="token-pct" data-target="40">0%</span>
-          </div>
-          <h3>Liquidity</h3>
-          <div class="token-bar"><span style="--fill:40%"></span></div>
-          <p>Locked liquidity to secure trading depth and stability.</p>
-        </div>
+</div>
 
-        <div class="token-card fade-up" style="--accent:#f5c451;">
-          <div class="token-card-top">
-            <span class="token-icon">◈</span>
-            <span class="token-pct" data-target="30">0%</span>
-          </div>
-          <h3>Community Allocation</h3>
-          <div class="token-bar"><span style="--fill:30%"></span></div>
-          <p>Reserved for holders, airdrops, and ecosystem incentives.</p>
-        </div>
+<div class="card">
 
-        <div class="token-card fade-up" style="--accent:#c084fc;">
-          <div class="token-card-top">
-            <span class="token-icon">◈</span>
-            <span class="token-pct" data-target="15">0%</span>
-          </div>
-          <h3>Marketing</h3>
-          <div class="token-bar"><span style="--fill:15%"></span></div>
-          <p>Fuel for visibility, partnerships, and growth campaigns.</p>
-        </div>
+<h3>Community</h3>
 
-        <div class="token-card fade-up" style="--accent:#9333ea;">
-          <div class="token-card-top">
-            <span class="token-icon">◈</span>
-            <span class="token-pct" data-target="10">0%</span>
-          </div>
-          <h3>Ecosystem</h3>
-          <div class="token-bar"><span style="--fill:10%"></span></div>
-          <p>Powering future AI, payments, and wallet development.</p>
-        </div>
+<p>Growing</p>
 
-        <div class="token-card fade-up" style="--accent:#e7b64c;">
-          <div class="token-card-top">
-            <span class="token-icon">◈</span>
-            <span class="token-pct" data-target="5">0%</span>
-          </div>
-          <h3>Treasury</h3>
-          <div class="token-bar"><span style="--fill:5%"></span></div>
-          <p>Reserved for long-term stability and strategic decisions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
 
-  <!-- ROADMAP -->
-  <section class="roadmap" id="roadmap">
-    <div class="section-inner">
-      <p class="section-eyebrow fade-up">03 — Trajectory</p>
-      <h2 class="section-title fade-up">Roadmap</h2>
+</div>
 
-      <div class="timeline">
+</section>
 
-        <div class="timeline-item fade-up is-done">
-          <div class="timeline-marker"><span>01</span></div>
-          <div class="timeline-content glass-card">
-            <span class="timeline-phase">Phase 1</span>
-            <h3>Foundation</h3>
-            <ul class="check-list">
-              <li><span class="check">✓</span> Branding</li>
-              <li><span class="check">✓</span> GitHub</li>
-              <li><span class="check">✓</span> Website</li>
-              <li><span class="check">✓</span> Telegram</li>
-              <li><span class="check">✓</span> X Account</li>
-            </ul>
-          </div>
-        </div>
+<section id="about">
 
-        <div class="timeline-item fade-up">
-          <div class="timeline-marker"><span>02</span></div>
-          <div class="timeline-content glass-card">
-            <span class="timeline-phase">Phase 2</span>
-            <h3>Momentum</h3>
-            <ul class="check-list">
-              <li><span class="dot"></span> Whitepaper</li>
-              <li><span class="dot"></span> Community Growth</li>
-              <li><span class="dot"></span> Marketing</li>
-              <li><span class="dot"></span> Verification</li>
-            </ul>
-          </div>
-        </div>
+<h2>About DragonX</h2>
 
-        <div class="timeline-item fade-up">
-          <div class="timeline-marker"><span>03</span></div>
-          <div class="timeline-content glass-card">
-            <span class="timeline-phase">Phase 3</span>
-            <h3>Visibility</h3>
-            <ul class="check-list">
-              <li><span class="dot"></span> CoinGecko</li>
-              <li><span class="dot"></span> CoinMarketCap</li>
-              <li><span class="dot"></span> DEX Listings</li>
-              <li><span class="dot"></span> Partnerships</li>
-            </ul>
-          </div>
-        </div>
+<p>
 
-        <div class="timeline-item fade-up">
-          <div class="timeline-marker"><span>04</span></div>
-          <div class="timeline-content glass-card">
-            <span class="timeline-phase">Phase 4</span>
-            <h3>Ecosystem</h3>
-            <ul class="check-list">
-              <li><span class="dot"></span> AI Ecosystem</li>
-              <li><span class="dot"></span> Payment System</li>
-              <li><span class="dot"></span> DragonX Wallet</li>
-              <li><span class="dot"></span> Global Expansion</li>
-            </ul>
-          </div>
-        </div>
+DragonX (DRGX) is a community-driven blockchain ecosystem focused on building transparent, secure and scalable blockchain solutions. Our vision is to create long-term value through innovation, AI technology and decentralized finance.
 
-      </div>
-    </div>
-  </section>
+</p>
 
-  <!-- WHITEPAPER STRIP -->
-  <section class="whitepaper" id="whitepaper">
-    <div class="section-inner whitepaper-inner glass-card fade-up">
-      <div>
-        <p class="section-eyebrow">04 — Read the Vision</p>
-        <h2 class="section-title small">The DragonX Whitepaper</h2>
-        <p class="section-lead">Full detail on the token model, roadmap mechanics, and the long-term ecosystem plan — written for holders, builders, and partners alike.</p>
-      </div>
-      <a href="#" class="btn btn--gold">
-        <span>Read Whitepaper</span>
-      </a>
-    </div>
-  </section>
+</section>
 
-  <!-- COMMUNITY / LINKS -->
-  <section class="community" id="community">
-    <div class="section-inner">
-      <p class="section-eyebrow fade-up">05 — Join In</p>
-      <h2 class="section-title fade-up">Official Links</h2>
-      <p class="section-lead fade-up">Verify every link here — this is the only source of truth for official DragonX channels.</p>
+<section id="roadmap">
 
-      <div class="links-grid">
-        <a href="#" class="link-card fade-up">
-          <span class="link-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M21 4 3 11.5l6 2 2 6L21 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </span>
-          <span class="link-body">
-            <span class="link-title">Telegram Community</span>
-            <span class="link-sub">Chat with holders &amp; the team</span>
-          </span>
-          <span class="link-arrow">→</span>
-        </a>
+<h2>Roadmap</h2>
 
-        <a href="#" class="link-card fade-up">
-          <span class="link-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M21 4 3 11.5l6 2 2 6L21 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </span>
-          <span class="link-body">
-            <span class="link-title">Telegram Channel</span>
-            <span class="link-sub">Official announcements</span>
-          </span>
-          <span class="link-arrow">→</span>
-        </a>
+<div class="timeline">
 
-        <a href="#" class="link-card fade-up">
-          <span class="link-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h4l4.5 6.2L18 4h2l-6.6 8.6L20.5 20H16l-4.8-6.6L6 20H4l7-9-7-7Z" fill="currentColor"/></svg>
-          </span>
-          <span class="link-body">
-            <span class="link-title">Official X</span>
-            <span class="link-sub">News &amp; updates</span>
-          </span>
-          <span class="link-arrow">→</span>
-        </a>
+<div class="timeline-item">
+<h3>Phase 1</h3>
+<p>✅ Branding</p>
+<p>✅ GitHub</p>
+<p>✅ Website</p>
+<p>✅ Telegram</p>
+<p>✅ X Account</p>
+</div>
 
-        <a href="#" class="link-card fade-up">
-          <span class="link-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.68-4.58 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.57.69.48A10 10 0 0 0 12 2Z" fill="currentColor"/></svg>
-          </span>
-          <span class="link-body">
-            <span class="link-title">GitHub</span>
-            <span class="link-sub">Open-source progress</span>
-          </span>
-          <span class="link-arrow">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
+<div class="timeline-item">
+<h3>Phase 2</h3>
+<p>🚧 Whitepaper</p>
+<p>🚧 Community Growth</p>
+<p>🚧 Marketing</p>
+<p>🚧 Verification</p>
+</div>
 
-</main>
+<div class="timeline-item">
+<h3>Phase 3</h3>
+<p>⏳ CoinGecko</p>
+<p>⏳ CoinMarketCap</p>
+<p>⏳ Partnerships</p>
+<p>⏳ DEX Listings</p>
+</div>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="section-inner footer-inner">
-    <div class="footer-brand">
-      <span class="brand-mark small">
-        <span class="brand-fallback">DX</span>
-      </span>
-      <span class="brand-name">Dragon<span class="accent-gold">X</span></span>
-    </div>
-    <p class="footer-copy">© 2026 DragonX (DRGX)</p>
-    <p class="footer-tag">Powering the Future of Blockchain Innovation</p>
-    <div class="footer-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#tokenomics">Tokenomics</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#community">Community</a>
-    </div>
-  </div>
+<div class="timeline-item">
+<h3>Phase 4</h3>
+<p>🚀 AI Ecosystem</p>
+<p>🚀 DragonX Wallet</p>
+<p>🚀 Payment System</p>
+<p>🚀 Global Expansion</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="whitepaper">
+
+<h2>Whitepaper</h2>
+
+<p>
+
+Whitepaper v1.0 is currently under development and will include tokenomics, governance, roadmap, utilities and the DragonX ecosystem.
+
+</p>
+
+<a href="#" class="btn primary">
+
+Coming Soon
+
+</a>
+
+</section>
+
+<section id="links">
+
+<h2>Official Links</h2>
+
+<a href="https://t.me/dragonxcommunity" target="_blank">Telegram Community</a><br><br>
+
+<a href="https://t.me/DragonXDRGX" target="_blank">Telegram Channel</a><br><br>
+
+<a href="https://x.com/officialdragonx" target="_blank">Official X</a><br><br>
+
+<a href="https://github.com/OfficialDragonX" target="_blank">GitHub</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 DragonX (DRGX)</p>
+
+<p>Powering the Future of Blockchain Innovation</p>
+
 </footer>
 
-<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
-
 <script src="script.js"></script>
+
 </body>
+
 </html>
