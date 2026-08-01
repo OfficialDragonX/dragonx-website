@@ -499,3 +499,50 @@ padding:70px 20px;
 }
 }
 
+/* ===========================
+   HAMBURGER MENU
+=========================== */
+
+.menu-toggle{
+display:none;
+font-size:30px;
+cursor:pointer;
+color:#D4AF37;
+transition:.3s;
+}
+
+.menu-toggle:hover{
+color:#B84DFF;
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.navbar{
+justify-content:space-between;
+}
+
+.navbar ul{
+display:none;
+width:100%;
+flex-direction:column;
+margin-top:15px;
+background:rgba(10,10,10,.95);
+padding:20px;
+border-radius:15px;
+}
+
+.navbar ul.active{
+display:flex;
+}
+
+.navbar ul li{
+margin:10px 0;
+text-align:center;
+}
+
+}
+
