@@ -65,3 +65,20 @@ window.addEventListener("scroll", () => {
     nav.style.boxShadow = "none";
   }
 });
+
+// ===============================
+// Mobile Menu
+// ===============================
+
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.querySelector(".navbar ul");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+
+  if (navMenu.classList.contains("active")) {
+    menuToggle.innerHTML = "✕";
+  } else {
+    menuToggle.innerHTML = "☰";
+  }
+});
