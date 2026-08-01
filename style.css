@@ -546,3 +546,58 @@ text-align:center;
 
 }
 
+/* ===========================
+   ANIMATED PARTICLES
+=========================== */
+
+.particles{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+pointer-events:none;
+}
+
+.particles::before,
+.particles::after{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+border-radius:50%;
+background:radial-gradient(circle,
+rgba(138,43,226,.20),
+transparent 70%);
+animation:moveParticles 18s linear infinite;
+}
+
+.particles::after{
+right:-200px;
+bottom:-200px;
+animation-duration:25s;
+}
+
+.particles::before{
+left:-200px;
+top:-200px;
+}
+
+@keyframes moveParticles{
+
+0%{
+transform:translate(0,0) rotate(0deg);
+}
+
+50%{
+transform:translate(80px,60px) rotate(180deg);
+}
+
+100%{
+transform:translate(0,0) rotate(360deg);
+}
+
+}
+
+
