@@ -1,5 +1,8 @@
-// Scroll Progress Bar
+// ===============================
+// DragonX Premium V2 Script
+// ===============================
 
+// Progress Bar
 window.addEventListener("scroll", () => {
   const scrollTop = document.documentElement.scrollTop;
   const scrollHeight =
@@ -7,38 +10,58 @@ window.addEventListener("scroll", () => {
     document.documentElement.clientHeight;
 
   const progress = (scrollTop / scrollHeight) * 100;
-
   document.getElementById("progress-bar").style.width = progress + "%";
 });
 
 // Copy Contract
-
 const copyBtn = document.getElementById("copyBtn");
 
 if (copyBtn) {
   copyBtn.addEventListener("click", () => {
-    const address = document.getElementById("contract-address").innerText;
+    const address = document
+      .getElementById("contract-address")
+      .innerText.trim();
 
     navigator.clipboard.writeText(address);
 
     copyBtn.innerHTML = "✅ Copied!";
-
     setTimeout(() => {
       copyBtn.innerHTML = "📋 Copy Contract";
     }, 2000);
   });
 }
 
-// Floating Logo
+// Smooth Reveal Animation
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateY(0)";
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  }
+);
 
-const logo = document.querySelector(".hero-logo");
+document.querySelectorAll("section").forEach((section) => {
+  section.style.opacity = "0";
+  section.style.transform = "translateY(50px)";
+  section.style.transition = "all 0.8s ease";
+  observer.observe(section);
+});
 
-if (logo) {
-  let direction = 1;
+// Navbar Background on Scroll
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector(".navbar");
 
-  setInterval(() => {
-    logo.style.transform = `translateY(${direction * 8}px)`;
-
-    direction *= -1;
-  }, 2000);
-}
+  if (window.scrollY > 80) {
+    nav.style.background = "rgba(5,5,5,.95)";
+    nav.style.boxShadow = "0 0 20px rgba(138,43,226,.4)";
+  } else {
+    nav.style.background = "rgba(8,8,8,.8)";
+    nav.style.boxShadow = "none";
+  }
+});
