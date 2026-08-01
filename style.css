@@ -600,4 +600,44 @@ transform:translate(0,0) rotate(360deg);
 
 }
 
+/* ===========================
+   LOADER
+=========================== */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#050505;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:opacity .8s ease;
+}
+
+.loader-logo{
+width:130px;
+animation:loaderSpin 3s linear infinite;
+filter:drop-shadow(0 0 25px #8A2BE2);
+}
+
+#loader h2{
+margin-top:20px;
+color:#D4AF37;
+font-size:32px;
+}
+
+#loader p{
+margin-top:10px;
+color:#bbb;
+}
+
+@keyframes loaderSpin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
 
