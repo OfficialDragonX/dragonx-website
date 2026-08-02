@@ -670,9 +670,9 @@ color:#bbb;
 .hero::after{
 content:"";
 position:absolute;
-top:42%;
-left:52%;
-width:500px;
+top:48%;
+left:62%;
+width:420px;
 height:14px;
 background:linear-gradient(
 90deg,
@@ -701,8 +701,8 @@ opacity:.3;
 transform:translateX(20px) rotate(-8deg);
 opacity:1;
 box-shadow:
-0 0 30px #B84DFF,
-0 0 60px #8A2BE2,
+0 0 40px #B84DFF,
+0 0 20px #8A2BE2,
 0 0 90px #D4AF37;
 }
 
