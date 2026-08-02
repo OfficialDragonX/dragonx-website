@@ -103,8 +103,8 @@ overflow:hidden;
     position:absolute;
     inset:0;
     background:url("dragon-bg.png") no-repeat center;
-    background-size:85%;
-    opacity:.28;
+    background-size:65%;
+    opacity:.20;
     z-index:0;
     pointer-events:none;
     animation:dragonFloat 8s ease-in-out infinite;
@@ -142,7 +142,7 @@ max-width:900px;
 }
 
 .hero-logo{
-width:180px;
+width:130px;
 margin-bottom:25px;
 filter:drop-shadow(0 0 30px #8A2BE2);
 }
