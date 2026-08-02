@@ -1103,4 +1103,101 @@ grid-template-columns:1fr;
 
 }
 
+/* ===========================
+      WHITEPAPER PREMIUM V3
+=========================== */
 
+#whitepaper{
+padding:100px 8%;
+position:relative;
+overflow:hidden;
+}
+
+.whitepaper-box{
+max-width:900px;
+margin:auto;
+padding:50px 40px;
+text-align:center;
+
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(138,43,226,.35);
+border-radius:24px;
+
+transition:.4s;
+}
+
+.whitepaper-box:hover{
+
+transform:translateY(-8px);
+
+border-color:#D4AF37;
+
+box-shadow:
+0 0 35px rgba(138,43,226,.35),
+0 0 60px rgba(212,175,55,.18);
+
+}
+
+.whitepaper-logo{
+width:120px;
+margin-bottom:25px;
+
+filter:drop-shadow(0 0 25px rgba(138,43,226,.6));
+
+animation:whitepaperFloat 5s ease-in-out infinite;
+}
+
+@keyframes whitepaperFloat{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+.whitepaper-box h3{
+font-size:30px;
+color:#D4AF37;
+margin-bottom:20px;
+}
+
+.whitepaper-box p{
+max-width:700px;
+margin:auto;
+line-height:1.9;
+color:#ddd;
+}
+
+.whitepaper-buttons{
+margin-top:35px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+@media(max-width:768px){
+
+#whitepaper{
+padding:80px 20px;
+}
+
+.whitepaper-box{
+padding:35px 25px;
+}
+
+.whitepaper-box h3{
+font-size:24px;
+}
+
+.whitepaper-logo{
+width:90px;
+}
+
+}
