@@ -712,3 +712,39 @@ opacity:.3;
 }
 
 }
+
+/* ===========================
+   HERO PREMIUM GLOW
+=========================== */
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(138,43,226,.18),
+    transparent 70%);
+
+    filter:blur(100px);
+
+    animation:heroGlow 6s ease-in-out infinite;
+
+    z-index:0;
+    pointer-events:none;
+}
+
+@keyframes heroGlow{
+
+0%,100%{
+opacity:.45;
+transform:scale(1);
+}
+
+50%{
+opacity:.9;
+transform:scale(1.08);
+}
+
+}
