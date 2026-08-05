@@ -1,10 +1,10 @@
 # DragonX (DRGX)
 
-Official website of DragonX (DRGX)
+Community-driven blockchain ecosystem built on Solana.
 
 ## Vision
 
-Powering the Future of AI, Payments & Blockchain.
+Building a trusted global blockchain ecosystem powered by transparency, community, AI-assisted infrastructure, and real-world asset innovation.
 
 ## Status
 
@@ -12,17 +12,15 @@ Powering the Future of AI, Payments & Blockchain.
 
 ## About
 
-DragonX is a community-driven blockchain project built on the Solana blockchain. DragonX is committed to building a trusted ecosystem through transparency, innovation, security, and long-term development.
-
-Our long-term vision includes exploring AI-powered blockchain technologies and digital payment solutions.
+DragonX is building a transparent, community-driven blockchain ecosystem powered by Solana. Our long-term vision is to connect blockchain technology, AI-assisted infrastructure, and real-world asset innovation into a trusted global ecosystem that creates sustainable value.
 
 ## Official Links
 
 🌐 Website  
-Coming Soon
+https://officialdragonx.github.io/dragonx-website/
 
 📘 Whitepaper  
-Coming Soon
+https://officialdragonx.github.io/dragonx-website/whitepaper.html
 
 💬 Telegram Community  
 https://t.me/dragonxcommunity
@@ -36,28 +34,52 @@ https://x.com/officialdragonx
 💻 GitHub  
 https://github.com/OfficialDragonX
 
+🚀 Pump.fun  
+https://join.pump.fun/HSag/dqybcpcr
+
 ## Disclaimer
 
-DragonX is currently under active development. Features described as future plans, including AI tools, payment solutions, and wallet services, are long-term goals and are not currently available.
+DragonX is currently under active development. Features described as future plans, including AI-assisted infrastructure, wallet services, merchant integrations, and real-world asset (RWA) solutions are long-term goals and are not currently available.
 
-This repository is for informational purposes only and should not be considered financial or investment advice.
+This repository is provided for informational purposes only and does not constitute financial, investment, or legal advice.
 
 ---
 
 ## Roadmap
 
-- ✅ Official GitHub
-- ✅ Official X Account
-- ✅ Official Telegram Community
-- ✅ Official Telegram Channel
-- 🚧 Whitepaper v1.0
-- 🚧 Official Website
-- ⏳ Domain
-- ⏳ CoinGecko Application
-- ⏳ CoinMarketCap Application
+### ✅ Phase 1 – Completed
+- Brand Identity
+- Official Logo
+- Solana Token Launch
+- Official Website
+- GitHub Repository
+- Telegram Community
+- Official X Account
+
+### 🚀 Phase 2 – In Progress
+- Whitepaper v1.1 Published
+- Community Growth
+- Marketing Campaigns
+- Strategic Partnerships
+- Brand Expansion
+
+### 🌍 Phase 3 – Planned
+- CoinGecko Listing
+- CoinMarketCap Listing
+- Smart Contract Audits
+- DragonX Wallet
+- Merchant Integrations
+- AI Research
+
+### 🏛️ Phase 4 – Future Vision
+- RWA Legal Structuring
+- First RWA Pilot
+- Global Partnerships
+- Cross-chain Expansion
+- Worldwide Community Growth
 
 ---
 
 # DragonX (DRGX)
 
-**Powering the Future of AI, Payments & Blockchain.**
+**Community-Driven • Built on Solana • Future Ready**
